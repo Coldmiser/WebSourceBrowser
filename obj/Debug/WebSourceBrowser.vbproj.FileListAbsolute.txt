@@ -1,0 +1,10 @@
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\bin\Debug\WebSourceBrowser.exe
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\bin\Debug\WebSourceBrowser.pdb
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\bin\Debug\WebSourceBrowser.xml
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.vbprojResolveAssemblyReference.cache
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.Form1.resources
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.Resources.resources
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.vbproj.GenerateResource.Cache
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.exe
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.xml
+c:\users\butskss\documents\visual studio 2015\Projects\WebSourceBrowser\WebSourceBrowser\obj\Debug\WebSourceBrowser.pdb
