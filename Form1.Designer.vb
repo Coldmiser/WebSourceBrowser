@@ -86,10 +86,12 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.AcceptsReturn = True
         Me.TextBox1.Location = New System.Drawing.Point(12, 9)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(702, 20)
         Me.TextBox1.TabIndex = 1
+        Me.TextBox1.WordWrap = False
         '
         'Button1
         '

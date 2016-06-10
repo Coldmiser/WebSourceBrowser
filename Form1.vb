@@ -5,6 +5,13 @@
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         RichTextBox1.Text = WebBrowser1.DocumentText
+        Dim file As System.IO.StreamWriter
+        Dim filename = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")
+        System.IO.Directory.CreateDirectory("C:\\WebSourceBrowser")
+        file = My.Computer.FileSystem.OpenTextFileWriter("C:\\WebSourceBrowser\\" + filename + ".html", True)
+        file.WriteLine(WebBrowser1.DocumentText)
+        file.Close()
+        'MsgBox("CMDLINE is:  " + CMDLINE)
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -12,24 +19,15 @@
     End Sub
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
-        Dim file As System.IO.StreamWriter
-        Dim filename = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")
-        file = My.Computer.FileSystem.OpenTextFileWriter("C:\\WebSourceBrowser\\" + filename + ".html", True)
-        file.WriteLine(RichTextBox1.Text)
-        file.Close()
         'Application.Exit()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim CMDLINE = ("NO")
         For Each arg As String In My.Application.CommandLineArgs
+            'CMDLINE = ("YES")
             Me.Hide()
             WebBrowser1.Navigate(arg)
-
-            'Select Case Trim(LCase(arg))
-            'Case "/?"
-            'MsgBox("Usage:  one\ntwo\hthree\hfour\tfive\n")
-            'Application.Exit()
-            'End Select
         Next
     End Sub
 End Class
